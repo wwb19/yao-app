@@ -1,0 +1,175 @@
+time="2024-04-10T23:45:35+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/certs lstat /root/data/app/yao-app/certs: no such file or directory"
+time="2024-04-10T23:45:35+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/stores lstat /root/data/app/yao-app/stores: no such file or directory"
+time="2024-04-10T23:45:35+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/lists lstat /root/data/app/yao-app/lists: no such file or directory"
+time="2024-04-10T23:45:35+08:00" level=error msg="lstat /root/data/app/yao-app/lists: no such file or directory"
+time="2024-04-10T23:45:35+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/imports lstat /root/data/app/yao-app/imports: no such file or directory"
+time="2024-04-10T23:45:35+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/tasks lstat /root/data/app/yao-app/tasks: no such file or directory"
+time="2024-04-10T23:45:35+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/schedules lstat /root/data/app/yao-app/schedules: no such file or directory"
+time="2024-04-10T23:45:35+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/widgets lstat /root/data/app/yao-app/widgets: no such file or directory"
+time="2024-04-10T23:45:36+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/certs lstat /root/data/app/yao-app/certs: no such file or directory"
+time="2024-04-10T23:45:36+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/stores lstat /root/data/app/yao-app/stores: no such file or directory"
+time="2024-04-10T23:45:36+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/lists lstat /root/data/app/yao-app/lists: no such file or directory"
+time="2024-04-10T23:45:36+08:00" level=error msg="lstat /root/data/app/yao-app/lists: no such file or directory"
+time="2024-04-10T23:45:36+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/imports lstat /root/data/app/yao-app/imports: no such file or directory"
+time="2024-04-10T23:45:36+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/tasks lstat /root/data/app/yao-app/tasks: no such file or directory"
+time="2024-04-10T23:45:36+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/schedules lstat /root/data/app/yao-app/schedules: no such file or directory"
+time="2024-04-10T23:45:36+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/widgets lstat /root/data/app/yao-app/widgets: no such file or directory"
+time="2024-04-10T23:45:36+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/certs lstat /root/data/app/yao-app/certs: no such file or directory"
+time="2024-04-10T23:45:36+08:00" level=trace msg="SELECT SQLITE_VERSION()" version=3.36.0
+time="2024-04-10T23:45:36+08:00" level=trace msg="SELECT SQLITE_VERSION()" version=3.36.0
+time="2024-04-10T23:45:36+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/stores lstat /root/data/app/yao-app/stores: no such file or directory"
+time="2024-04-10T23:45:36+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/lists lstat /root/data/app/yao-app/lists: no such file or directory"
+time="2024-04-10T23:45:36+08:00" level=error msg="lstat /root/data/app/yao-app/lists: no such file or directory"
+time="2024-04-10T23:45:36+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/imports lstat /root/data/app/yao-app/imports: no such file or directory"
+time="2024-04-10T23:45:36+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/tasks lstat /root/data/app/yao-app/tasks: no such file or directory"
+time="2024-04-10T23:45:36+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/schedules lstat /root/data/app/yao-app/schedules: no such file or directory"
+time="2024-04-10T23:45:36+08:00" level=error msg="[disk.Walk] /root/data/app/yao-app/widgets lstat /root/data/app/yao-app/widgets: no such file or directory"
+time="2024-04-10T23:45:36+08:00" level=debug msg="SELECT `name` FROM `sqlite_master` WHERE type='table' AND name='yao_neo_conversation'"
+time="2024-04-10T23:45:36+08:00" level=debug msg="SELECT `name` FROM `sqlite_master` WHERE type='table' AND name='yao_neo_conversation'"
+time="2024-04-10T23:45:36+08:00" level=debug msg="\n\t\t\tSELECT m.name AS `table_name`,p.name AS `name`,p.cid AS `position`,p.dflt_value AS `default`,UPPER(p.type) as `type`,CASE\n\t\t\tWHEN p.`notnull` == 0 THEN 1\n\t\t\tELSE 0\n\t\tEND AS `nullable`,CASE\n\t\t   WHEN INSTR(p.`type`, 'UNSIGNED' ) THEN 1\n\t\t   WHEN  p.pk = 1 and p.`type` = 'INTEGER' THEN 1 \n\t\t   ELSE 0\n\t\tEND AS`unsigned`,CASE\n\t\t\tWHEN p.pk = 1 THEN 1\n\t\t\tELSE 0\n\t\tEND AS `primary`,CASE\n\t\t\tWHEN p.pk = 1 and INSTR(m.sql, 'AUTOINCREMENT' ) THEN \"AutoIncrement\"\n\t\t\tELSE \"\"\n\t\tEND AS `extra`\n\t\t\tFROM sqlite_master m\n\t\t\tLEFT OUTER JOIN pragma_table_info((m.name)) p  ON m.name <> p.name\n\t\t\tWHERE m.type = 'table' and table_name='yao_neo_conversation'\n\t\t"
+time="2024-04-10T23:45:36+08:00" level=debug msg="\n\t\t\tSELECT m.`tbl_name` AS `table_name`,il.`name` AS `index_name`,ii.`name` AS `column_name`,CASE \n\t\t\tWHEN il.origin = 'pk' then 'primary' \n\t\t\tWHEN il.[unique] = 1  THEN 'unique'\n\t\t\tELSE 'index'\n\t\tEND as index_type,CASE\n\t\t\tWHEN il.[unique] = 1 THEN 1\n\t\t\tWHEN il.[unique] = 0 THEN 0\n\t\t\tELSE 0\n\t\tEND AS `unique`,il.`seq`  AS `seq_in_index`,ii.`seqno` AS  `seq_in_column`\n\t\t\t\tFROM sqlite_master AS m,\n\t\t\t\tpragma_index_list(m.name) AS il,\n\t\t\t\tpragma_index_info(il.name) AS ii\n\t\t\tWHERE \n\t\t\t\tm.type = 'table'\n\t\t\t\tand m.tbl_name = 'yao_neo_conversation'\n\t\t\tGROUP BY\n\t\t\t\tm.tbl_name,\n\t\t\t\til.name,\n\t\t\t\tii.name,\n\t\t\t\til.origin,\n\t\t\t\til.partial,\n\t\t\t\til.seq\n\t\t\tUNION\n\t\t\tSELECT \n\t\t\t\t'yao_neo_conversation' as table_name, \n\t\t\t\t'PRIMARY' as index_name, \n\t\t\t\tti.name as column_name,\n\t\t\t\t\"primary\" as index_type,\n\t\t\t\t1 as `unique`,\n\t\t\t\t0 as `seq_in_index`,\n\t\t\t\t0 as `seq_in_column`\n\t\t\tFROM pragma_table_info('yao_neo_conversation') AS ti WHERE ti.pk=1\n\t\t\tORDER BY seq_in_index,index_name,seq_in_column\n\t\t"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /dsl/:method              --> github.com/yaoapp/yao/studio.setRouter.func1 (4 handlers)
+[GIN-debug] POST   /dsl/:method              --> github.com/yaoapp/yao/studio.setRouter.func2 (4 handlers)
+[GIN-debug] POST   /service/:name            --> github.com/yaoapp/yao/studio.setRouter.func3 (4 handlers)
+[GIN-debug] OPTIONS /neo                      --> github.com/yaoapp/yao/neo.(*DSL).crossDomain.func2 (6 handlers)
+[GIN-debug] OPTIONS /neo/commands             --> github.com/yaoapp/yao/neo.(*DSL).crossDomain.func3 (6 handlers)
+[GIN-debug] OPTIONS /neo/history              --> github.com/yaoapp/yao/neo.(*DSL).crossDomain.func4 (6 handlers)
+[GIN-debug] GET    /neo                      --> github.com/yaoapp/yao/neo.(*DSL).API.func1 (6 handlers)
+[GIN-debug] GET    /neo/history              --> github.com/yaoapp/yao/neo.(*DSL).API.func2 (6 handlers)
+[GIN-debug] GET    /neo/commands             --> github.com/yaoapp/yao/neo.(*DSL).API.func3 (6 handlers)
+[GIN-debug] POST   /neo                      --> github.com/yaoapp/yao/neo.(*DSL).API.func4 (6 handlers)
+time="2024-04-10T23:45:36+08:00" level=info msg="[Studio] Starting: 0.0.0.0:5077"
+time="2024-04-10T23:45:36+08:00" level=trace msg="Session Store: File /root/data/app/yao-app/db/.session"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/xiang/import/:name   --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/xiang/import/:name/setting --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/xiang/import/:name/data --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/xiang/import/:name/data/setting --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/xiang/import/:name/mapping --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/xiang/import/:name/mapping/setting --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/xiang/storage/upload --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/xiang/storage/readfile --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/xiang/storage/url    --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (3 handlers)
+[GIN-debug] GET    /api/xiang/storage/token  --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/__yao/login/admin    --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (3 handlers)
+[GIN-debug] GET    /api/__yao/login/admin/captcha --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/__yao/login/user     --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (3 handlers)
+[GIN-debug] GET    /api/__yao/login/user/captcha --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (3 handlers)
+[GIN-debug] GET    /api/__yao/app/setting    --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/__yao/app/setting    --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (3 handlers)
+[GIN-debug] GET    /api/__yao/app/menu       --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/__yao/app/icons/:name --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/__yao/app/setup      --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/__yao/app/check      --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/__yao/app/service/:name --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/__yao/table/:id/setting --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/__yao/table/:id/search --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/__yao/table/:id/get  --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/__yao/table/:id/find/:primary --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/__yao/table/:id/component/:xpath/:method --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/__yao/table/:id/upload/:xpath/:method --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/__yao/table/:id/download/:field --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/__yao/table/:id/save --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/__yao/table/:id/create --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/__yao/table/:id/insert --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/__yao/table/:id/update/:primary --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/__yao/table/:id/update/where --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/__yao/table/:id/update/in --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/__yao/table/:id/delete/:primary --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/__yao/table/:id/delete/where --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/__yao/table/:id/delete/in --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/__yao/dashboard/:id/setting --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/__yao/dashboard/:id/data --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/__yao/dashboard/:id/component/:xpath/:method --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/aigc/translate       --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (3 handlers)
+[GIN-debug] GET    /api/__yao/list/:id/setting --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/__yao/list/:id/get   --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/__yao/list/:id/component/:xpath/:method --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/__yao/list/:id/component/:xpath/:method --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/__yao/list/:id/upload/:xpath/:method --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/__yao/list/:id/download/:field --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/__yao/list/:id/save  --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/__yao/form/:id/setting --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/__yao/form/:id/find/:primary --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/__yao/form/:id/component/:xpath/:method --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/__yao/form/:id/component/:xpath/:method --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/__yao/form/:id/upload/:xpath/:method --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/__yao/form/:id/download/:field --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/__yao/form/:id/save  --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/__yao/form/:id/create --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/__yao/form/:id/update/:primary --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/__yao/form/:id/delete/:primary --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/__yao/chart/:id/setting --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/__yao/chart/:id/data --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/__yao/chart/:id/component/:xpath/:method --> github.com/yaoapp/gou/api.Path.defaultHandler.func1 (4 handlers)
+[GIN-debug] OPTIONS /api/__yao/neo            --> github.com/yaoapp/yao/neo.(*DSL).crossDomain.func2 (6 handlers)
+[GIN-debug] OPTIONS /api/__yao/neo/commands   --> github.com/yaoapp/yao/neo.(*DSL).crossDomain.func3 (6 handlers)
+[GIN-debug] OPTIONS /api/__yao/neo/history    --> github.com/yaoapp/yao/neo.(*DSL).crossDomain.func4 (6 handlers)
+[GIN-debug] GET    /api/__yao/neo            --> github.com/yaoapp/yao/neo.(*DSL).API.func1 (6 handlers)
+[GIN-debug] GET    /api/__yao/neo/history    --> github.com/yaoapp/yao/neo.(*DSL).API.func2 (6 handlers)
+[GIN-debug] GET    /api/__yao/neo/commands   --> github.com/yaoapp/yao/neo.(*DSL).API.func3 (6 handlers)
+[GIN-debug] POST   /api/__yao/neo            --> github.com/yaoapp/yao/neo.(*DSL).API.func4 (6 handlers)
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/aigcs"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/apis"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/charts"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/connectors"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/connectors/openai"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/dashboards"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/flows"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/flows/app"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/flows/stat"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/forms"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/forms/admin"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/forms/demo"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/icons"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/langs"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/langs/zh-cn"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/langs/zh-hk"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/logins"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/models"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/models/admin"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/neo"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/scripts"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/services"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/studio"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/tables"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/tables/admin"
+time="2024-04-10T23:45:36+08:00" level=info msg="[Watch] Watching: /root/data/app/yao-app/tables/demo"
+[GIN] 2024/04/10 - 23:45:39 | 200 |       837.6µs |   192.168.3.140 | GET      "/admin/"
+[GIN] 2024/04/10 - 23:45:39 | 200 |      1.0394ms |   192.168.3.140 | GET      "/admin/icon_font.css"
+[GIN] 2024/04/10 - 23:45:39 | 200 |       674.1µs |   192.168.3.140 | GET      "/admin/umi.css"
+[GIN] 2024/04/10 - 23:45:39 | 200 |      7.4706ms |   192.168.3.140 | GET      "/admin/theme/light.css"
+[GIN] 2024/04/10 - 23:45:39 | 200 |      5.4999ms |   192.168.3.140 | GET      "/admin/framework.js"
+[GIN] 2024/04/10 - 23:45:39 | 200 |     33.3483ms |   192.168.3.140 | GET      "/admin/umi.js"
+[GIN] 2024/04/10 - 23:45:40 | 200 |    133.9529ms |   192.168.3.140 | GET      "/admin/shared-Z7dPfJDwrSsb0LxJw6truEWlSg_.async.js"
+[GIN] 2024/04/10 - 23:45:40 | 200 |    135.1012ms |   192.168.3.140 | GET      "/admin/acorn-lib.async.js"
+[GIN] 2024/04/10 - 23:45:40 | 200 |    140.2256ms |   192.168.3.140 | GET      "/admin/@-public-theme-dark_sss-lib.async.js"
+[GIN] 2024/04/10 - 23:45:40 | 200 |    141.0522ms |   192.168.3.140 | GET      "/admin/@-public-theme-light_sss-lib.async.js"
+[GIN] 2024/04/10 - 23:45:40 | 200 |    137.3067ms |   192.168.3.140 | GET      "/admin/shared-5ElL1oBauYoLnamDi6zaVLiA6g_.async.js"
+[GIN] 2024/04/10 - 23:45:40 | 200 |      8.9396ms |   192.168.3.140 | GET      "/admin/shared-vWVMwxF7r9AVT8rpVDjJZZDsze8_.async.js"
+[GIN] 2024/04/10 - 23:45:40 | 200 |      1.3854ms |   192.168.3.140 | GET      "/admin/shared-cAu-svfPz98u0s3SKsqWXmvbUQ_.chunk.css"
+[GIN] 2024/04/10 - 23:45:40 | 200 |       955.4µs |   192.168.3.140 | GET      "/admin/layouts__index.chunk.css"
+[GIN] 2024/04/10 - 23:45:40 | 200 |      2.8213ms |   192.168.3.140 | GET      "/admin/shared-cAu-svfPz98u0s3SKsqWXmvbUQ_.async.js"
+[GIN] 2024/04/10 - 23:45:40 | 200 |      3.4297ms |   192.168.3.140 | GET      "/admin/layouts__index.async.js"
+[GIN] 2024/04/10 - 23:45:40 | 200 |         717µs |   192.168.3.140 | POST     "/api/__yao/app/setting"
+[GIN] 2024/04/10 - 23:45:40 | 200 |       808.4µs |   192.168.3.140 | GET      "/admin/shared-gKdRnYVX94jkmsivbinWTMhCVoA_.async.js"
+[GIN] 2024/04/10 - 23:45:40 | 200 |       689.4µs |   192.168.3.140 | GET      "/admin/p__index.chunk.css"
+[GIN] 2024/04/10 - 23:45:40 | 200 |       392.3µs |   192.168.3.140 | GET      "/admin/p__index.async.js"
+[GIN] 2024/04/10 - 23:45:40 | 200 |      1.2606ms |   192.168.3.140 | GET      "/api/__yao/app/icons/app.png"
+[GIN] 2024/04/10 - 23:45:40 | 200 |      1.9216ms |   192.168.3.140 | GET      "/admin/font/static/Outfit-Regular.ttf"
+[GIN] 2024/04/10 - 23:45:40 | 200 |       804.9µs |   192.168.3.140 | GET      "/api/__yao/app/icons/app.ico"
+[GIN] 2024/04/10 - 23:45:40 | 200 |       698.7µs |   192.168.3.140 | POST     "/api/__yao/app/setting"
+[GIN] 2024/04/10 - 23:45:40 | 200 |      3.1532ms |   192.168.3.140 | GET      "/admin/font/static/Outfit-Bold.ttf"
+time="2024-04-10T23:45:40+08:00" level=debug msg="ID:x0swqrOm9qkKNVS1DXgG Image Captcha:330540"
+[GIN] 2024/04/10 - 23:45:40 | 200 |      4.7629ms |   192.168.3.140 | GET      "/api/__yao/login/admin/captcha?type=digit"
+[GIN] 2024/04/10 - 23:45:40 | 200 |      4.8033ms |   192.168.3.140 | GET      "/admin/icon/fa_icon.woff"
+[GIN] 2024/04/10 - 23:45:40 | 200 |       1.932ms |   192.168.3.140 | GET      "/admin/font/static/Outfit-SemiBold.ttf"
+[GIN] 2024/04/10 - 23:45:40 | 200 |      8.0396ms |   192.168.3.140 | GET      "/admin/icon/md_icon_outline.otf"
